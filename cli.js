@@ -7,11 +7,12 @@ const path = require('path')
 const fs = require('fs')
 
 const [,, configJsFile, localPath, remotePath, forceUpload] = process.argv
+
 assert.ok(configJsFile && localPath && remotePath, `Please use command: ali-oss-lazy-upload CONFIG-JS-FILE LOCAL-FILE REMOTE-PATH [FORCE-UPLOAD]`)
-assert.ok(fs.existsSync(configJsFile), `Config file does not exist.`)
+assert.ok(fs.existsSync(path.resolve('', configJsFile)), `Config file does not exist.`)
 assert.ok(fs.existsSync(localPath), `The file of local path does not exist.`)
 
-const config = require(configJsFile)
+const config = require(path.resolve('', configJsFile))
 const uploader = new AliyunOSS(config.uploader)
 const visitor = new AliyunOSS(config.visitor)
 
