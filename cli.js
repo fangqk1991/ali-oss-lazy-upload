@@ -29,9 +29,9 @@ const syncFile = async (localFile, remotePath) => {
     }
   } else {
     if (await visitor.checkExists(remotePath)) {
-      console.info(`Remote file[${remotePath} exists`)
+      console.info(`--- Remote file[${remotePath} exists.`)
       if (!forceUpload) {
-        console.info(`Skip the local file [${localPath}]`)
+        console.info(`--- Skip the local file [${localFile}]`)
         return
       }
     }
