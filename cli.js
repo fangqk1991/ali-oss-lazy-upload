@@ -40,7 +40,12 @@ const syncFile = async (localFile, remotePath) => {
 }
 
 const main = async () => {
-  await syncFile(localPath, remotePath)
+  try {
+    await syncFile(localPath, remotePath)
+  } catch (e) {
+    console.error(e)
+    process.exit(1)
+  }
   process.exit()
 }
 

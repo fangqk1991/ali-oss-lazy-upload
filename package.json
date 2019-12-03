@@ -1,6 +1,6 @@
 {
   "name": "ali-oss-lazy-upload",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ali OSS Lazy Upload, if a file exists in remote space, it will be ignored.",
   "main": "index.js",
   "scripts": {
