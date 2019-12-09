@@ -16,8 +16,18 @@ const config = require(path.resolve('', configJsFile))
 const uploader = new AliyunOSS(config.uploader)
 const visitor = new AliyunOSS(config.visitor)
 
+const formatSize = (size) =>  {
+  let unit
+  const units = ['B', 'KB', 'MB', 'GB', 'TB']
+  while ((unit = units.shift()) && size > 1024) {
+    size = size / 1024
+  }
+  return `${unit === 'B' ? size : size.toFixed(2)}${unit}`
+}
+
 const syncFile = async (localFile, remotePath) => {
-  console.info(`Sync ${localFile} => ${remotePath}`)
+  const fileSize = fs.statSync(localFile).size
+  console.info(`Sync ${localFile}[${formatSize(fileSize)}] => ${remotePath}`)
   if (!fs.existsSync(localFile)) {
     console.error(`Local file [${localFile}] does not exist.`)
     return
@@ -35,7 +45,10 @@ const syncFile = async (localFile, remotePath) => {
         return
       }
     }
+    const start = Date.now()
     await uploader.uploadFile(localFile, remotePath)
+    const duration = (Date.now() - start) / 1000
+    console.info(`Time elapsed: ${duration.toFixed(2)}s`)
   }
 }
 
