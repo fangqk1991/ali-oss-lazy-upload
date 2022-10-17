@@ -1,6 +1,6 @@
 {
   "name": "ali-oss-lazy-upload",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Ali OSS Lazy Upload, if a file exists in remote space, it will be ignored.",
   "main": "index.js",
   "scripts": {
@@ -28,8 +28,8 @@
     "ali-oss-download": "download-cli.js"
   },
   "dependencies": {
-    "@fangcha/tools": "^1.21.1",
-    "@fangcha/ali-oss": "^1.1.0",
+    "@fangcha/tools": "^1.22.0",
+    "@fangcha/ali-oss": "^1.2.0",
     "shelljs": "^0.8.4"
   }
 }

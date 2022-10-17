@@ -211,20 +211,20 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fangcha/ali-oss@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@fangcha/ali-oss/-/ali-oss-1.1.0.tgz#4ba276b82802befad5c75f3728d271258e1ad6b1"
-  integrity sha512-c1CYOjmpVNBiBuv4iD8Id44NCMqw3QZvhBSgGsddFUa1I719ZQ8Q41S9N90sMeFaFJowuWtgFl9MXiSeQ/IFMg==
+"@fangcha/ali-oss@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@fangcha/ali-oss/-/ali-oss-1.2.0.tgz#74b4157d626c75b8e9e51c3e2f4f7642a13d78e6"
+  integrity sha512-x2TV6Vqs3jrItAbGd8D27U6Q8O642pleGhsK9oCr/BgXqI1JJf0hJ39kH4ukYKGNWL1X/qFm+VohC6GChbOglQ==
   dependencies:
-    ali-oss "^6.12.0"
+    ali-oss "^6.17.1"
     md5-file "^5.0.0"
     shelljs "^0.8.4"
     tslib "^2.2.0"
 
-"@fangcha/tools@^1.21.1":
-  version "1.21.1"
-  resolved "https://registry.yarnpkg.com/@fangcha/tools/-/tools-1.21.1.tgz#2fce119593f188e40a9733cf9b86317f552614ce"
-  integrity sha512-fJolc1JCA4ZMJDRNVl2aPqKMSeJbaQ5GO3/7LacNBwlDFeuxUntobFweYXKz7U65z9VzFI4XRPkQIHmqHLUBgw==
+"@fangcha/tools@^1.22.0":
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/@fangcha/tools/-/tools-1.22.0.tgz#38aff465bed971f2f1c09ea04f7b4b842a44e2d7"
+  integrity sha512-06e6ZNzWmCqV0KlAQwGZVZmiff0C0REDyFck4VgB9Ug7YwR9HVub01fxG0oMd9vZEUXUuHUHrEFPE3QS4YC62w==
   dependencies:
     moment "^2.29.1"
     tslib "^2.3.1"
@@ -382,7 +382,7 @@ ajv@^8.0.1:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-ali-oss@^6.12.0:
+ali-oss@^6.17.1:
   version "6.17.1"
   resolved "https://registry.yarnpkg.com/ali-oss/-/ali-oss-6.17.1.tgz#3e88738ec01111a26a2b967cf857d97050886156"
   integrity sha512-v2oT3UhSJTH/LrsscVvi7iEGrnundydNaFzpYAKatqOl4JNcBV4UiwtlJU+ZHLys040JH2k+CutznA0GoE+P2w==
